@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Workout Tracker</title>
+
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="main">
-            <div class="heading">
-                <h1>Calculate Your Workout Time</h1>
-                <button id="start">Begin Workout</button>
+    <div class="main-container">
+        <div class="home">
+            <div class="head">
+                <h1>Track Your Reps & Time Efficiency</h1>
+                <Button id="startWorkoutBtn">Begin Workout <i class="fa-solid fa-circle-chevron-right"></i></Button>
             </div>
-            <div class="list">
-                <div class="cointainer"></div>
+
+            <div class="list-container">
+                <div class="container"></div>
                 <div class="main">
-                    <input type="text" placeholder="Exercise Name" id="workout">
-                    <input type="number" placeholder="no of sets" id="no of sets">
-                    <input type="time" placeholder="Time of workout" id="timeLimit">
+                    <input id="workout" type="text" placeholder=" Add Your Exercise">
+                    <input id="reps" type="number" placeholder=" Enter Reps">
+                    <input id="timeLimit" type="time" placeholder=" Specify Time Limit" value="00:30">
                     <button id="addWorkoutBtn">Add to Workout Plan</button>
                 </div>
                 <ul class="table">
-
                 </ul>
-            </div>
 
+            </div>
         </div>
+    </div>
     </div>
 </body>
 <script src="./js/index.js"></script>
-
 
 </html>
