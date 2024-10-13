@@ -59,3 +59,9 @@ function startExercise(){
         endWorkout();
     }
 }
+function startRest(){
+    if(cuuerentWorkoutIndex<workouts.length){
+        currentExercise.textContent ="resting Time ....."
+        startCountDown(restTime,startExercise)
+    }
+}
