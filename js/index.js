@@ -24,7 +24,7 @@ function displayEntry() {
       workouts[i].reps
     }</div>
                 <div class="col col-3">${formatTime(workouts[i].duration)}</div>
-                <button class="col col-4 deleteBtn" data-index="${i}">X</button>
+                <button class="col col-4 deleteBtn" data-index="${i}">clear</button>
             </li>`;
   }
   document.querySelector(".table").innerHTML = items;
