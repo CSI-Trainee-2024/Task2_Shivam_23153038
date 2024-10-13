@@ -61,7 +61,23 @@ function startExercise(){
 }
 function startRest(){
     if(cuuerentWorkoutIndex<workouts.length){
-        currentExercise.textContent ="resting Time ....."
-        startCountDown(restTime,startExercise)
+        currentExercise.textContent ="Resting Time ....."
+        startCountDown(restTime,startExercise);
     }
+}
+endExerciseBtn.addEventListener("click",()=>{
+if(cuuerentWorkoutIndex<workouts.length){
+   clearInterval(workoutInterval);
+   const workout = workouts[cuuerentWorkoutIndex];
+    logExercise(workout.name,workout.duration-currentTime);
+    cuuerentWorkoutIndex++;
+    startRest();
+}
+else{
+    endWorkout();
+}
+});
+function logExercise(name,completedTime){
+    workoutLog.push(name,completedTime); //
+    localStorage.setItem("workoutLog",JSON.stringify(workoutLog));
 }
