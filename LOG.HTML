@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Log - Workout Tracker</title>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="title" style="display: flex; justify-content: space-around; align-items: center;">
+                <h1>Workout Stats</h1>
+                <button id="restartBtn">New Session </button>
+            </div>
+
+            <div class="workout-log">
+                <h3>Your Completed Exercises</h3>
+                <ul id="workoutLog" class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-1">S no.</div>
+                        <div class="col col-2">Exercise Name</div>
+                        <div class="col col-3">Planned Time</div>
+                        <div class="col col-4">Completion Time</div>
+                    </li>
+                </ul>
+                <div style="text-align: center;">
+                    <button id="goBackBtn">Add More Exercises</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/log.js"></script>
+</body>
+
+</html>
