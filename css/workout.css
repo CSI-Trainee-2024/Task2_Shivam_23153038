@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+}
+
+h1, h3 {
+    color: #705C53;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#timer {
+    font-size: 5rem;
+    color: #705C53;
+    margin: 0;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+button {
+    background-color: #B7B7B7;
+    color: #705C53;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:disabled {
+    background-color: #EDDFE0;
+    cursor: not-allowed;
+}
+
+#quitExercise {
+    background-color: #705C53;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#quitExercise:hover {
+    transform: scale(1.1);
+}
+
+.container-workout {
+    background-color: #EDDFE0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
+}
+
+.timeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left {
+    flex-grow: 1;
+}
+
+#endExerciseBtn {
+    background-color: #B7B7B7;
+    color: #705C53;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#endExerciseBtn:hover {
+    transform: scale(1.1);
+}
+
+#endExerciseBtn:disabled {
+    background-color: #EDDFE0;
+}
+
+#timer {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #705C53;
+}
+
+.right {
+    margin-left: 20px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #B7B7B7;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #705C53;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+label {
+    color: #705C53;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
