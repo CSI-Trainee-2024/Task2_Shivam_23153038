@@ -1,0 +1,215 @@
+body {
+  background-color: #9b59b6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.head {
+  background-color: #f39c12;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 #2c3e50;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.head h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+}
+
+.head button {
+  background-color: #00cec9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  box-shadow: 2px 2px 0 #2c3e50;
+}
+
+.head button:hover {
+  background-color: #00b894;
+}
+
+.list-container {
+  background-color: #a3e4d7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 #2c3e50;
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main input[type="text"], .main input[type="number"], .main input[type="time"] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+  width: calc(100% - 22px);
+  box-sizing: border-box;
+}
+
+.main input[type="number"], .main input[type="time"] {
+  width: calc(33% - 22px);
+  box-sizing: border-box;
+}
+
+.main button {
+  background-color: #f39c12;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #2c3e50;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main button:hover {
+  background-color: #e67e22;
+}
+
+.table {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tableRow {
+  background-color: #a3e4d7;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 #2c3e50;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tableRow .col {
+  flex: 1;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.tableRow .col-1 {
+  text-align: left;
+}
+
+.tableRow .col-3 {
+  text-align: center;
+}
+
+.tableRow .col-4 {
+  text-align: right;
+}
+
+.tableRow .deleteBtn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .head button {
+      position: static;
+      margin-top: 10px;
+  }
+
+  .main input[type="number"], .main input[type="time"] {
+      width: calc(50% - 22px);
+  }
+
+  .tableRow .col {
+      min-width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .head h1 {
+      font-size: 18px;
+  }
+
+  .head button {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  .main input[type="text"], .main input[type="number"], .main input[type="time"] {
+      padding: 5px;
+      margin: 3px;
+  }
+
+  .main input[type="number"], .main input[type="time"] {
+      width: calc(50% - 16px);
+  }
+
+  .main button {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  .tableRow {
+      padding: 5px;
+  }
+
+  .tableRow .col {
+      min-width: 60px;
+  }
+}
+
+@media (max-width: 200px) {
+  .head h1 {
+      font-size: 14px;
+  }
+
+  .head button {
+      padding: 3px 5px;
+      font-size: 12px;
+  }
+
+  .main input[type="text"], .main input[type="number"], .main input[type="time"] {
+      padding: 3px;
+      margin: 2px;
+  }
+
+  .main input[type="number"], .main input[type="time"] {
+      width: calc(100% - 10px);
+  }
+
+  .main button {
+      padding: 3px 5px;
+      font-size: 12px;
+  }
+
+  .tableRow {
+      padding: 3px;
+  }
+
+  .tableRow .col {
+      min-width: 50px;
+  }
+}
