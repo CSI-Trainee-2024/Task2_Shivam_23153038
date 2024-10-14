@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Header Section - Track Your Workout & Start Workout Button */
+.header-container {
+    background-color: #e0d5d5;
+    padding: 20px 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust top margin */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e3e3e3;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-container button {
+    background-color: #bc1a70;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.header-container button:hover {
+    transform: translateY(-3px);
+    background-color: #16a085;
+}
+
+/* Main container with workout log */
+.main-container {
+    background-color: rgb(232, 225, 213);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    margin-top: 30px; /* Space between header and main container */
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 20px;
+    margin: 30px;
+    background: ;
+}
+
+ul.responsive-table {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.table-header {
+    background-color: aqua;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    margin: 20px;
+}
+
+.tableRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.col {
+    flex-basis: 25%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+    color: #444;
+}
+
+/* Generic Button */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #2980b9;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .tableRow, .table-header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
